@@ -67,7 +67,7 @@ const Otp: React.FC<OtpProps> = ({navigation: {popToTop, navigate}}) => {
           </TouchableOpacity>
         </View>
 
-        <CustomButton onPress={() => navigate('Otp')} text="Login" />
+        <CustomButton onPress={() => navigate('TabScreen')} text="Login" />
       </View>
 
       <CustomFooter />

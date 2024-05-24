@@ -3,5 +3,6 @@ export default colors = {
     black: "#000",
     white: "#FFFFFF",
     field_border: "#C7C7C7",
-    primary: "#432360"
+    primary: "#432360",
+    grey: "#ACACAC"
 }

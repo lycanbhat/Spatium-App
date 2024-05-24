@@ -17,7 +17,12 @@ const Login: React.FC<LoginProps> = ({navigation: {navigate}}) => {
         <Image
           resizeMode="center"
           source={images.sign_in_logo}
-          style={{height: scale(320), width: scale(320)}}
+          style={styles.signInLogo}
+        />
+        <Image
+          resizeMode="center"
+          source={images.spatium_logo}
+          style={styles.spatiumLogo}
         />
       </View>
       <View style={styles.bodyContainer}>
@@ -30,7 +35,10 @@ const Login: React.FC<LoginProps> = ({navigation: {navigate}}) => {
           keyboardType={KeyboardType['email-address']}
           placeholder="Enter your official email ID"
         />
-        <CustomButton onPress={() => navigate('Otp')} text="Send OTP" />
+        <CustomButton
+          onPress={() => navigate('Otp', {email: ''})}
+          text="Send OTP"
+        />
       </View>
       <CustomFooter />
     </ScrollView>
