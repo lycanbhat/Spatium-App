@@ -32,8 +32,8 @@ const Announcement = () => {
         <View key={index} style={styles.container}>
           <View style={styles.profileContainer}>
             <Image
-              source={images.profile_logo}
-              resizeMode="center"
+              source={images.profile_pic}
+              resizeMode="cover"
               style={styles.profile}
             />
           </View>

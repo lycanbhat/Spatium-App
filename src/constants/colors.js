@@ -5,5 +5,7 @@ export default colors = {
     field_border: "#C7C7C7",
     primary: "#432360",
     grey: "#ACACAC",
-    text: "#3C3C3C"
+    text: "#3C3C3C",
+    activeBackground: "#B5EEB6",
+    activeText: "#085509"
 }

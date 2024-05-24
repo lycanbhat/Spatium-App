@@ -10,7 +10,9 @@ const styles = ScaledSheet.create({
     elevation: '4@s',
     backgroundColor: colors.white,
     borderRadius: '16@s',
-    shadowColor: '#000', // Shadow properties for iOS
+
+    // Shadow properties for iOS
+    shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: '0.25@s',
     shadowRadius: '3.84@s',
@@ -22,7 +24,7 @@ const styles = ScaledSheet.create({
     borderColor: colors.field_border,
     marginRight: '8@s',
   },
-  profile: {height: '40@s', width: '40@s'},
+  profile: {height: '40@s', width: '40@s', borderRadius: '10@s'},
   contentContainer: {flex: 1},
   title: {
     fontSize: '14@s',
