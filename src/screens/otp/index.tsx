@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import CustomBackButton from '../../components/custom_back_button';
 import {View, Image, Text, ScrollView, TouchableOpacity} from 'react-native';
 import styles from './styles';
@@ -9,7 +9,7 @@ import CustomButton from '../../components/custom_button';
 import {OtpProps} from '../../common/types';
 import CustomFooter from '../../components/custom_footer';
 
-const Otp: React.FC<OtpProps> = ({navigation: {popToTop, navigate}}) => {
+const Otp: React.FC<OtpProps> = ({navigation: {popToTop, replace}}) => {
   const [otp, setOtp] = useState('');
   const [timer, setTimer] = useState(30);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -40,7 +40,7 @@ const Otp: React.FC<OtpProps> = ({navigation: {popToTop, navigate}}) => {
         <Image
           resizeMode="center"
           source={images.otp_logo}
-          style={{height: 400, width: 400}}
+          style={styles.otpLogo}
         />
       </View>
 
@@ -67,7 +67,7 @@ const Otp: React.FC<OtpProps> = ({navigation: {popToTop, navigate}}) => {
           </TouchableOpacity>
         </View>
 
-        <CustomButton onPress={() => navigate('TabScreen')} text="Login" />
+        <CustomButton onPress={() => replace('TabScreen')} text="Login" />
       </View>
 
       <CustomFooter />

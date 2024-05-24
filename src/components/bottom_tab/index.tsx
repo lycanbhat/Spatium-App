@@ -2,9 +2,8 @@ import {View, Image, Pressable} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import colors from '../../constants/colors';
-import {scale} from 'react-native-size-matters';
 
-const BottomTab = ({state, navigation}: any) => {
+const BottomTab = ({state, navigation: {navigate}}: any) => {
   return (
     <View style={styles.container}>
       {state.routes.map((route: any, index: number) => {
@@ -14,7 +13,7 @@ const BottomTab = ({state, navigation}: any) => {
           <Pressable
             key={route.name}
             style={styles.innerContainer}
-            onPress={() => navigation.navigate(route.name)}>
+            onPress={() => navigate(route.name)}>
             <Image
               source={route.params.icon}
               style={styles.image}

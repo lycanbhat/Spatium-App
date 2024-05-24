@@ -11,6 +11,7 @@ const styles = ScaledSheet.create({
     alignItems: 'center',
     flex: 1,
   },
+  otpLogo: {height: '300@s', width: '300@s'},
   bodyContainer: {
     flex: 1,
   },
