@@ -1,5 +1,6 @@
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RouteProp} from '@react-navigation/native';
+import {PassCardType} from './enum';
 
 //Navigation
 export type StackParamList = {
@@ -32,3 +33,24 @@ export type MyPassProps = {
 export type ProfileProps = {
   navigation: StackNavigationProp<StackParamList, 'Profile'>;
 };
+
+// TabRoutes
+export type TabRoutes = 'Announcement' | 'MyPass' | 'Profile';
+
+// BuildingPassProps
+export type BuildingPassProps = {
+  passCardText: PassCardType.buildingPass;
+  issueDate: string;
+};
+
+// ParkingPassProps
+export type ParkingPassProps = {
+  passCardText: PassCardType.parkingPass;
+  vehicle: string;
+};
+
+// CardProps
+export type CardProps = {
+  name: string;
+  location: string;
+} & (BuildingPassProps | ParkingPassProps);

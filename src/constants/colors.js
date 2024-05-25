@@ -7,5 +7,6 @@ export default colors = {
     grey: "#ACACAC",
     text: "#3C3C3C",
     activeBackground: "#B5EEB6",
-    activeText: "#085509"
+    activeText: "#085509",
+    logout: "#E8E8E8"
 }

@@ -2,23 +2,8 @@ import {View, Text, Image} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import images from '../../../../constants/images';
-import colors from '../../../../constants/colors';
 import {PassCardType} from '../../../../common/enum';
-
-type BuildingPassProps = {
-  passCardText: PassCardType.buildingPass;
-  issueDate: string;
-};
-
-type ParkingPassProps = {
-  passCardText: PassCardType.parkingPass;
-  vehicle: string;
-};
-
-type CardProps = {
-  name: string;
-  location: string;
-} & (BuildingPassProps | ParkingPassProps);
+import {CardProps} from '../../../../common/types';
 
 const Card: React.FC<CardProps> = (props: CardProps) => {
   const isBuildingPass = props.passCardText === PassCardType.buildingPass;

@@ -8,8 +8,7 @@ import {
   ProfileLogo,
 } from '../../constants/images';
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
-
-type TabRoutes = 'Announcement' | 'MyPass' | 'Profile';
+import {TabRoutes} from '../../common/types';
 
 const ICONS: Record<TabRoutes, React.FC<{color: string}>> = {
   Announcement: AnnouncementLogo,

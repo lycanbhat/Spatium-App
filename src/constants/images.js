@@ -9,6 +9,7 @@ export default images = {
     building_pass: require("../assets/images/building_pass.jpg"),
     parking_pass: require("../assets/images/parking_pass.jpg"),
     profile_pic: require("../assets/images/profile_pic.jpg"),
+    banner: require("../assets/images/banner.jpg")
 }
 
 export {

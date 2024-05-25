@@ -5,11 +5,11 @@ const styles = ScaledSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
-    padding: '10@s',
+    padding: '14@s',
     margin: '12@s',
     elevation: '4@s',
     backgroundColor: colors.white,
-    borderRadius: '16@s',
+    borderRadius: '14@s',
 
     // Shadow properties for iOS
     shadowColor: '#000',
@@ -20,11 +20,11 @@ const styles = ScaledSheet.create({
   profileContainer: {
     alignSelf: 'flex-start',
     borderWidth: '1@s',
-    borderRadius: '10@s',
+    borderRadius: '14@s',
     borderColor: colors.field_border,
     marginRight: '8@s',
   },
-  profile: {height: '40@s', width: '40@s', borderRadius: '10@s'},
+  profile: {height: '50@s', width: '50@s', borderRadius: '14@s'},
   contentContainer: {flex: 1},
   title: {
     fontSize: '14@s',
@@ -38,7 +38,7 @@ const styles = ScaledSheet.create({
     color: colors.text,
     marginBottom: '6@s',
   },
-  banner: {width: '100%', height: '100@s'},
+  banner: {width: '100%', height: '100@s', borderRadius: '14@s'},
 });
 
 export default styles;
