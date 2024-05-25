@@ -7,9 +7,9 @@ export type StackParamList = {
   TabScreen: undefined;
   Login: undefined;
   Otp: {email: string};
-  Announcement: {icon: number};
-  MyPass: {icon: number};
-  Profile: {icon: number};
+  Announcement: undefined;
+  MyPass: undefined;
+  Profile: undefined;
 };
 
 export type LoginProps = {

@@ -7,7 +7,6 @@ import {FieldType, KeyboardType} from '../../common/enum';
 import CustomButton from '../../components/custom_button';
 import CustomFooter from '../../components/custom_footer';
 import {LoginProps} from '../../common/types';
-import {scale} from 'react-native-size-matters';
 
 const Login: React.FC<LoginProps> = ({navigation: {navigate}}) => {
   const [email, setEmail] = useState('');

@@ -8,7 +8,6 @@ import {StackParamList} from '../common/types';
 import MyPass from '../screens/my-pass';
 import Profile from '../screens/profile';
 import BottomTab from '../components/bottom_tab';
-import images from '../constants/images';
 
 const Stack = createStackNavigator<StackParamList>();
 const AuthStack = createStackNavigator<StackParamList>();
@@ -31,21 +30,9 @@ function TabScreen() {
       initialRouteName="Announcement"
       screenOptions={{headerShown: false}}
       tabBar={props => <BottomTab {...props} />}>
-      <TabStack.Screen
-        initialParams={{icon: images.mypass_logo}}
-        name="Announcement"
-        component={Announcement}
-      />
-      <TabStack.Screen
-        initialParams={{icon: images.mypass_logo}}
-        name="MyPass"
-        component={MyPass}
-      />
-      <TabStack.Screen
-        initialParams={{icon: images.profile_logo}}
-        name="Profile"
-        component={Profile}
-      />
+      <TabStack.Screen name="Announcement" component={Announcement} />
+      <TabStack.Screen name="MyPass" component={MyPass} />
+      <TabStack.Screen name="Profile" component={Profile} />
     </TabStack.Navigator>
   );
 }
