@@ -1,4 +1,4 @@
-package com.spatiumapp
+package com.spatiumhub
 
 import android.app.Application
 import com.facebook.react.PackageList

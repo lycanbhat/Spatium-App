@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "SpatiumApp.app"
-               BlueprintName = "SpatiumApp"
-               ReferencedContainer = "container:SpatiumApp.xcodeproj">
+               BuildableName = "SpatiumHub.app"
+               BlueprintName = "SpatiumHub"
+               ReferencedContainer = "container:SpatiumHub.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "SpatiumAppTests.xctest"
-               BlueprintName = "SpatiumAppTests"
-               ReferencedContainer = "container:SpatiumApp.xcodeproj">
+               BuildableName = "SpatiumHubTests.xctest"
+               BlueprintName = "SpatiumHubTests"
+               ReferencedContainer = "container:SpatiumHub.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "SpatiumApp.app"
-            BlueprintName = "SpatiumApp"
-            ReferencedContainer = "container:SpatiumApp.xcodeproj">
+            BuildableName = "SpatiumHub.app"
+            BlueprintName = "SpatiumHub"
+            ReferencedContainer = "container:SpatiumHub.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "SpatiumApp.app"
-            BlueprintName = "SpatiumApp"
-            ReferencedContainer = "container:SpatiumApp.xcodeproj">
+            BuildableName = "SpatiumHub.app"
+            BlueprintName = "SpatiumHub"
+            ReferencedContainer = "container:SpatiumHub.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

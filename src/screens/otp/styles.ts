@@ -33,6 +33,7 @@ const styles = ScaledSheet.create({
   },
   countdownText: {
     fontSize: '12@s',
+    color: colors.grey,
     fontFamily: 'Ubuntu-Medium',
   },
   resendText: {
@@ -40,6 +41,7 @@ const styles = ScaledSheet.create({
     color: colors.black,
     fontFamily: 'Ubuntu-Medium',
     textDecorationLine: 'underline',
+    textDecorationColor: colors.black,
   },
 });
 

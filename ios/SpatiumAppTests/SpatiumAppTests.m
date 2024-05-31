@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface SpatiumAppTests : XCTestCase
+@interface SpatiumHubTests : XCTestCase
 
 @end
 
-@implementation SpatiumAppTests
+@implementation SpatiumHubTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {
